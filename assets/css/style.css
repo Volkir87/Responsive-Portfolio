@@ -103,21 +103,21 @@ label {
     top: 0;
 }
 
-.info-header {
+.info_header {
     text-align: left;
     border-bottom: 2px #cccccc solid;
     padding: 0px 0px 12px 0px;
     color: #4aaaa5;
 }
 
-#portfolio-image {
+#portfolio_image {
     width: 125px;
     height: 125px;
     float: left;
     margin: 10px;
 }
 
-.info-data {
+.info_data {
     display: flex;
     flex-wrap: nowrap;
     /* justify-content: space-around; */
@@ -135,7 +135,7 @@ label {
     box-sizing: border-box;
 }
 
-#name, .info-header {
+#name, .info_header {
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 22px;
     font-weight: bold;
@@ -155,7 +155,7 @@ footer, p, .links, button, label {
     font-size: 14px;
 }
 
-.left-bordered {
+.left_bordered {
     border-left: 2px #cccccc solid;
 }
 
@@ -197,7 +197,7 @@ input {
 
 }
 
-#message-box {
+#message_box {
     height: 15vh;
     border-radius: 5px;
     width: 99%;
@@ -205,13 +205,13 @@ input {
     border-color: #cccccc;
 }
 
-#all-portfolios {
+#all_portfolios {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.portfolio-box {
+.portfolio_box {
     width: 15rem;
     height: 11rem;
     display: inline-block;
@@ -241,7 +241,7 @@ input {
     background-size: 100%;
 }
 
-.portfolio-item-name {
+.portfolio_item_name {
     display: inline-block;
     width: 100%;
     height: 25px;
@@ -261,11 +261,11 @@ input {
     .info {
         margin: 5vh 5% 5vh 5%;
     }
-    .info-data {
+    .info_data {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .portfolio-box {
+    .portfolio_box {
         margin: 1.5rem 1rem 1.5rem 1rem;
     }
 }
@@ -291,11 +291,11 @@ input {
         height: 5rem;
         position: absolute;
     }
-    .left-bordered {
+    .left_bordered {
         border: none;
     }
 
-    #all-portfolios {
+    #all_portfolios {
         flex-direction: column;
         align-items: center;
     }
