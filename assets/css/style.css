@@ -77,13 +77,6 @@ label {
     flex-direction: column;
 }
 
-#portfolio-image {
-    width: 125px;
-    height: 125px;
-    float: left;
-    margin: 10px;
-}
-
 .links {
     margin: 0vh 12vw 0vh 0vw;
     padding: 0.8rem 0px 0px 0px;
@@ -107,6 +100,13 @@ label {
     border-bottom: 2px #cccccc solid;
     padding: 0px 0px 12px 0px;
     color: #4aaaa5;
+}
+
+#portfolio-image {
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin: 10px;
 }
 
 .info-data {
@@ -183,24 +183,30 @@ input {
     border-width: 1px;
     border-style: solid;
     border-color: #cccccc;
-    height: 3vh;
+    height: 1.5rem;
 
 }
 
 #message-box {
-    height: 10vh;
+    height: 15vh;
     border-radius: 5px;
     width: 99%;
     resize: vertical;
     border-color: #cccccc;
 }
 
+#all-portfolios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .portfolio-box {
-    width: 30%;
-    height: 25vh;
+    width: 15rem;
+    height: 11rem;
     display: inline-block;
     border: #cccccc solid 2px;
-    margin: 3vh 6vw 3vh 6vw;   
+    margin: 1.5rem 1rem 1.5rem 1rem;   
     padding: 0vh; 
 }
 
@@ -232,10 +238,10 @@ input {
     background-color: #4aaaa5;
     color: white;
     padding-top: 1vh;
-    font-size: 3vh;
+    font-size: 1rem;
     padding: 0vh;
     margin: 0vh;
-    margin-top: 18vh;
+    margin-top: 8rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -248,6 +254,9 @@ input {
     .info-data {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .portfolio-box {
+        margin: 1.5rem 1rem 1.5rem 1rem;
     }
 }
 
@@ -273,5 +282,10 @@ input {
     }
     .left-bordered {
         border: none;
+    }
+
+    #all-portfolios {
+        flex-direction: column;
+        align-items: center;
     }
 }
