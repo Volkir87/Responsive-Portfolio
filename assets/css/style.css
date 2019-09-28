@@ -45,6 +45,10 @@ table {
 
 /* New element, class and id style definitions start here */
 
+body {
+    margin: 0;
+}
+
 footer {
     border-top: 1vh solid #4aaaa5;
     text-align: center;
@@ -69,7 +73,7 @@ label {
 }
 
 .info {
-    margin: 5vh 15% 5vh 15%;
+    margin: 0rem 15% 2rem 15%;
     padding: 3vh;
     background-color: #ffffff;
     border: #dddddd 2px solid;
@@ -87,12 +91,16 @@ label {
 }
 
 .top {
+    overflow: hidden;
     height: 2.6rem;
     background-color: #ffffff;
     border-bottom: 2px #cccccc solid;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .info-header {
@@ -136,8 +144,10 @@ label {
 .general {
     background-image: url("../images/so-white.png");
     background-color: #cccccc;
-    min-height: 95vh;
+    min-height: 85vh;
     margin-bottom: -4vh; 
+    margin-top: 0;
+    padding-top: 5rem;
 }
 
 footer, p, .links, button, label {
@@ -279,6 +289,7 @@ input {
         flex-direction: column;
         justify-content: center;
         height: 5rem;
+        position: absolute;
     }
     .left-bordered {
         border: none;
